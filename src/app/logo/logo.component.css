@@ -1,0 +1,20 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  min-width: 100px;
+  margin-right: 40px;
+  float: left;
+}
+.logo img {
+  display: block;
+  max-width: 100%;
+}
+.name_page {
+  color: #2a2a2a;
+  font-size: 28px;
+  flex-grow: 1;
+}

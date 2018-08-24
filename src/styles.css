@@ -1,0 +1,68 @@
+/*reset to defaults*/
+*{margin:0px; padding:0px; -webkit-appearance: none;}
+
+ul{list-style:none;}
+
+table{border-collapse: collapse; border-spacing: 0;}
+p img {position:relative; top: 4px;}
+hr {border:0; background:0; height:1px; overflow:hidden;}
+a,a:visited{text-decoration:underline; cursor: pointer;}
+a:hover{text-decoration:none;}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+body {
+  min-width: 320px;
+  height: 100%;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: Roboto, sans-serif;
+}
+h1 {
+  padding: 0.7em 0;
+  font-size: 3.0rem;
+  line-height: 1.2;
+}
+h2 {
+  padding: 0.9em 0 0.5em;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+h2:first-child {
+  padding-top: 0em;
+}
+h3 {
+  padding: 0.7em 0 0.5em;
+  font-size: 2.0rem;
+  line-height: 1.2;
+}
+ul {
+  padding: 0em 2em 1em 1.5em;
+}
+.content li {
+  padding: 0.0em 0 0.5em 1.0em;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 400;
+  position: relative;
+}
+.content li::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #c02010;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+}
+
+img.my_foto {
+  display: block;
+  margin-bottom: 40px;
+}
