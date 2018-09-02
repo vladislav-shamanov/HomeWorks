@@ -1,9 +1,9 @@
 export class Aphorism {
 
-  readonly text: string;
+  txt: string;
 
   constructor(text: string) {
-    this.text = text;
+    this.txt = text;
 
   }
 }

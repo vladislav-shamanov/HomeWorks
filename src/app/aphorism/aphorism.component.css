@@ -8,17 +8,12 @@
 .aphorism_body {
   height: 200px;
   display: flex;
-  opacity: 0.0;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #262626;
+}
 
-}
-.aphorism_body.start_aphorism {
-  opacity: 1.0;
-  transition: opacity 0.4s ease-out 1s;
-}
 .aphorism_timer {
   position: absolute;
   left: 0px;
@@ -31,9 +26,7 @@
   text-align: center;
   color: #262626;
 }
-.aphorism_timer.aphorism_timer_hidden {
-  display: none;
-}
+
 .aphorism_timer span.nambe {
   font-size: 24px;
 }

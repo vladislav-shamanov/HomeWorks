@@ -1,4 +1,4 @@
-import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { Component,  OnDestroy, OnInit } from '@angular/core';
 import {Aphorism} from "./aphorism";
 
 @Component({
@@ -8,16 +8,19 @@ import {Aphorism} from "./aphorism";
 })
 export class AphorismComponent implements OnInit, OnDestroy {
 
-  aphorism: string;
+  aphorism: Aphorism;
 
   waitingPeriod: number = 9;
 
   private timerId: number;
 
-  finishW: string = "";
+  private finishW: string;
 
   constructor() {
-    this.aphorism = "Благородный муж в душе безмятежен.";
+    this.aphorism = new Aphorism(
+      'Благородный муж в душе безмятежен.',
+    );
+
   }
 
   ngOnInit() {
@@ -31,8 +34,6 @@ export class AphorismComponent implements OnInit, OnDestroy {
       }
       if (this.waitingPeriod == 0) {
         clearInterval(this.timerId);
-        document.getElementById("aphorism").classList.add("start_aphorism");
-        document.getElementById("mesage").classList.add("aphorism_timer_hidden");
       }
     }, 1000);
 
