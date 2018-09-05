@@ -9,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
-  technologies: string[];
-  interests: string[];
+  technologies: string[] = [];
+  interests: string[] = [];
 
   inputTechnologiesValue: string;
+  inputInterestsValue: string;
 
   constructor() {
     this.technologies = [
@@ -36,8 +37,10 @@ export class ContentComponent implements OnInit {
   }
 
   addTechnologies() {
-    alert(this.inputTechnologiesValue);
-
+    this.technologies.push(this.inputTechnologiesValue);
+  }
+  addInterests() {
+    this.interests.push(this.inputInterestsValue);
   }
 
   ngOnInit() {

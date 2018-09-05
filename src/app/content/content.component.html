@@ -22,8 +22,8 @@
 </ul>
 <div class="for_inp_data">
   <h4>Добавить интерес</h4>
-  <input type="text">
-  <button type="button">Добавить</button>
+  <input type="text" [(ngModel)]="inputInterestsValue">
+  <button type="button" (click)="addInterests()">Добавить</button>
 </div>
 
 <h2>Контакты</h2>
