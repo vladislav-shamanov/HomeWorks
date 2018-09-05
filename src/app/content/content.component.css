@@ -1,0 +1,27 @@
+.for_inp_data {
+  padding-left: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #262626;
+  margin-bottom: 40px;
+}
+.for_inp_data input {
+  height: 30px;
+  width: 500px;
+  border: 1px solid #c0c0c0;
+  box-sizing: border-box;
+  padding: 2px 10px;
+  margin-right: 2px;
+  font-size: 14px;
+}
+.for_inp_data button {
+  height: 30px;
+  width: 100px;
+  background: #c02010;
+  border: 1px solid #c02010;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 700;
+}
+.for_inp_data h4 {
+  margin-bottom: 5px;
+}
